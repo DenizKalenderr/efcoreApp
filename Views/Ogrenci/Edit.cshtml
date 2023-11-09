@@ -1,0 +1,30 @@
+@model Ogrenci
+
+<h2>Öğrenci Ekle</h2>
+<hr>
+<form asp-controller="Ogrenci" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="OgrenciId">
+    
+    <div class="mb-3">
+        <label asp-for="OgrenciAdi" class="form-label">Öğrenci Adı</label>
+        <input asp-for="OgrenciAdi" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="OgrenciSoyad" class="form-label">Öğrenci Soyadı</label>
+        <input asp-for="OgrenciSoyad" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Telefon" class="form-label">Telefon Numarası</label>
+        <input asp-for="Telefon" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+
+</form>
