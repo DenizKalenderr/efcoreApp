@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = efcoreApp
 build_property.RootNamespace = efcoreApp
-build_property.ProjectDir = c:\Users\denzk\efcoreApp\
+build_property.ProjectDir = C:\Users\denzk\efcoreApp\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\denzk\efcoreApp
+build_property.MSBuildProjectDirectory = C:\Users\denzk\efcoreApp
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/denzk/efcoreApp/Views/Home/Index.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Home/Privacy.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/KursKayit/Create.cshtml]
+[C:/Users/denzk/efcoreApp/Views/KursKayit/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc0theWl0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/KursKayit/Index.cshtml]
+[C:/Users/denzk/efcoreApp/Views/KursKayit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc0theWl0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Kurs/Create.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Kurs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Kurs/Delete.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Kurs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Kurs/Edit.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Kurs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Kurs/Index.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Kurs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Ogrenci/Create.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Ogrenci/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Ogrenci/Delete.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Ogrenci/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Ogrenci/Edit.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Ogrenci/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Ogrenci/Index.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Ogrenci/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Shared/Error.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/_ViewImports.cshtml]
+[C:/Users/denzk/efcoreApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/_ViewStart.cshtml]
+[C:/Users/denzk/efcoreApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/denzk/efcoreApp/Views/Shared/_Layout.cshtml]
+[C:/Users/denzk/efcoreApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f4qgijkujb
