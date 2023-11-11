@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 
 namespace efcoreApp.Controllers
 {
-    public class OgrenciController : Controller
+    public class OgrenciController : Controller  
     {
         //Bu işleme injection denir. Consturctor ile bu şekilde yapılır.
         private readonly DataContext _context;
