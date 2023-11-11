@@ -17,5 +17,7 @@ namespace efcoreApp.Data
             }
         public string? Email { get; set; }
         public string? Telefon { get; set; }
+        //Öğrenci tarafından bakınca her öğrencinin katılacağı birden fazla kurs için liste tipinde. Öğrencinin kurs kayıt tablosundaki yabancı anahtarları toptan getirecek bir navigation property.
+        public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit>();
     }
 }
