@@ -10,6 +10,9 @@ namespace efcoreApp.Data
         public string? Soyad { get; set; }
         public string? Email { get; set; }
         public string? Telefon { get; set; }
+        
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString ="{0:yyyy-MM-dd}", ApplyFormatInEditMode =  true)]
         public DateTime BaslamaTarihi { get; set; }
 
         // Burada da bir öğretmen brden fazla kurs verebilir demiş oluyoruz.
