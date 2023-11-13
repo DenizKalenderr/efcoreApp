@@ -29,12 +29,18 @@ namespace efcoreApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Kurs model)
+        public async Task<IActionResult> Create(KursViewModel model)
         {
-            _contex.Kurslar.Add(model);
+            if(ModelState.IsValid)
+            {
+            _contex.Kurslar.Add(new Kurs() {KursId = model.KursId, Baslik=model.Baslik, OgretmenId = model.OgretmenId});
             //Vt na aktarır bu satır.
             await _contex.SaveChangesAsync();
             return RedirectToAction("Index");
+            }
+            ViewBag.Ogretmenler = new SelectList(await _contex.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
+            return View(model);
+
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
@@ -109,6 +115,8 @@ namespace efcoreApp.Controllers
                 }
                 return RedirectToAction("Index");
             }
+
+            ViewBag.Ogretmenler = new SelectList(await _contex.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
             return View(model);
         }
 

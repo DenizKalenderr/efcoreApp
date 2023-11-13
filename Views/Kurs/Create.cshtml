@@ -1,10 +1,11 @@
-@model Kurs
+@model KursViewModel
 
 <h2>Kurs Ekle</h2>
 <hr>
 <form asp-controller="Kurs" asp-action="Create" method="post">
+    <div asp-validation-summary="All"></div>
     <div class="mb-3">
-        <label asp-for="Baslik" class="form-label">Baslik</label>
+        <label asp-for="Baslik" class="form-label"></label>
         <input asp-for="Baslik" class="form-control">
     </div>
     <div class="mb-3">
