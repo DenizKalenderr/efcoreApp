@@ -1,5 +1,7 @@
 using efcoreApp.Data;
+using efcoreApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace efcoreApp.Controllers
@@ -11,15 +13,17 @@ namespace efcoreApp.Controllers
         {
             _contex = context;
         }
+
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var kurslar = await _contex.Kurslar.ToListAsync();
+            var kurslar = await _contex.Kurslar.Include(k => k.Ogretmen).ToListAsync();
             return View(kurslar);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.Ogretmenler = new SelectList(await _contex.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
             return View();
         }
 
@@ -44,18 +48,29 @@ namespace efcoreApp.Controllers
                         .Kurslar
                         .Include(k => k.KursKayitlari)
                         .ThenInclude(k => k.Ogrenci)
+                        .Select(k=> new KursViewModel
+                        {
+                            KursId = k.KursId,
+                            Baslik = k.Baslik,
+                            OgretmenId = k.OgretmenId,
+                            KursKayitlari = k.KursKayitlari
+                        } )
                         .FirstOrDefaultAsync(k =>k.KursId == id);
 
             if(kurs == null)
             {
                 return NotFound();
             }
+
+            // Ogretmenler listesini ViewBag'e ekleyin
+            ViewBag.Ogretmenler = new SelectList(await _contex.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
+
             return View(kurs);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Kurs model)
+        public async Task<IActionResult> Edit(int id, KursViewModel model)
         {
             if(id != model.KursId)
             {
@@ -66,8 +81,17 @@ namespace efcoreApp.Controllers
             {
                 try
                 {
-                    _contex.Update(model);
-                    await _contex.SaveChangesAsync();
+                     _contex.Update(new Kurs() {KursId = model.KursId, Baslik=model.Baslik, OgretmenId = model.OgretmenId});
+                     await _contex.SaveChangesAsync();
+                    //var kurs = new Kurs
+                    // {
+                    //     KursId = model.KursId,
+                    //     Baslik = model.Baslik,
+                    //     OgretmenId = model.OgretmenId
+                    // };
+
+                    // _contex.Update(kurs);
+                    // await _contex.SaveChangesAsync();
 
                 }
 
